@@ -87,6 +87,7 @@ module Git
   #
   # options
   #   :bare => true (does a bare clone)
+  #   :mirror => false (does a mirror clone)
   #   :repository => '/path/to/alt_git_dir'
   #   :index => '/path/to/alt_index_file'
   #

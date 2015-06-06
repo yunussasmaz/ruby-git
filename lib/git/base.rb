@@ -20,6 +20,7 @@ module Git
     #   :repository
     #
     #    :bare
+    #    :mirror
     #   or 
     #    :working_directory
     #    :index_file

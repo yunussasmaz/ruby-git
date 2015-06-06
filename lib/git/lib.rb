@@ -47,6 +47,7 @@ module Git
     #
     # accepts options:
     #  :bare::      no working directory
+    #  :mirror::    no working directory, mirrored
     #  :branch::    name of branch to track (rather than 'master')
     #  :depth::     the number of commits back to pull
     #  :origin::    name of remote (same as remote)
@@ -62,6 +63,7 @@ module Git
       
       arr_opts = []
       arr_opts << '--bare' if opts[:bare]
+      arr_opts << '--mirror' if opts[:mirror]
       arr_opts << '--branch' << opts[:branch] if opts[:branch]
       arr_opts << '--depth' << opts[:depth].to_i if opts[:depth] && opts[:depth].to_i > 0
       arr_opts << '--config' << opts[:config] if opts[:config]
